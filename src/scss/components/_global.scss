@@ -1,15 +1,16 @@
 body {
-  background-color: #09031D;
-  cursor: default;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
-  color: #FFFFFF;
-  font-family: 'Rubik', sans-serif;
+  color: #fff;
+
   //font-family: 'Raleway', sans-serif;
   background-image: url("../images/bg.svg");
-  background-size: 100%;
   background-position: center;
+  background-size: 100%;
+  background-color: #09031d;
+  cursor: default;
 }
 
 .container {
@@ -20,16 +21,16 @@ body {
 
 .header-footer {
   .menu {
-    height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    height: 100px;
 
     ul {
       display: flex;
 
       a {
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1;
@@ -37,20 +38,20 @@ body {
 
       li {
         + li {
-          margin-left: 91px;
           position: relative;
+          margin-left: 91px;
 
           &::after {
+            content: "/";
             position: absolute;
             left: -50px;
+            top: 50%;
             width: 11px;
             height: 18px;
             font-weight: 500;
             font-size: 16px;
             line-height: 1;
-            top: 50%;
             transform: translateY(-50%);
-            content: "/";
           }
         }
       }
@@ -59,124 +60,129 @@ body {
 }
 
 .rv-teleg {
-  border: 1px solid #FFFFFF;
-  border-radius: 5px;
-  height: 60px;
-  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 40px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 5px;
 
   span {
-    font-family: 'Raleway', sans-serif;
     display: block;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1;
   }
 
   img {
+    margin-left: 10px;
     width: 20px;
     height: 20px;
-    margin-left: 10px;
     object-fit: contain;
   }
 }
 
 h2 {
+  margin-bottom: 91px;
   font-weight: 700;
   font-size: 64px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 91px;
 
   span {
+    display: block;
+    margin: 0 auto;
     padding: 9px 20px 7px;
     width: fit-content;
-    margin: 0 auto;
-    display: block;
-    color: #239AE3;
-    background-color: #FFFFFF;
     border-radius: 5px;
+    color: #239ae3;
+    background-color: #fff;
     transform: rotate(-2deg);
   }
 }
 
 .cities {
+  position: relative;
   margin-bottom: 58px;
+  background-image: url("../images/cities-bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__support {
     position: absolute;
-    width: 100%;
+    left: 0;
+    bottom: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
+    width: 100%;
     height: 100%;
 
     &::after,
     &::before {
+      content: url("../images/deco1.svg");
       position: absolute;
-      top: -16px;
       right: -16px;
+      top: -16px;
+      opacity: 0.3;
       width: 82px;
       height: 82px;
-      opacity: 0.3;
-      content: url("../images/deco1.svg");
       transform: rotate(90deg);
     }
 
     &::before {
+      right: -16px;
       top: auto;
       bottom: -16px;
-      right: -16px;
       transform: rotate(180deg);
     }
   }
 
   &__helper {
     position: absolute;
-    width: 100%;
+    left: 0;
+    bottom: 0;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
+    width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 
   &__list {
-    margin-bottom: 50px;
-    display: grid;
     position: relative;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
 
     li {
-      min-height: 215px;
       box-sizing: border-box;
-      margin: 10px;
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      border: 4px solid #239AE3;
+      margin: 10px;
+      min-height: 215px;
+      border: 4px solid #239ae3;
       border-radius: 2px;
-      position: relative;
 
       &::after,
       &::before {
+        content: url("../images/deco1.svg");
         position: absolute;
+        left: -16px;
         top: -16px;
+        opacity: 0.3;
         width: 82px;
         height: 82px;
-        left: -16px;
-        opacity: 0.3;
-        content: url("../images/deco1.svg");
       }
 
       &::before {
@@ -197,10 +203,10 @@ h2 {
       }
 
       h4 {
-        z-index: 5;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
+        z-index: 10;
         margin-bottom: 22px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
         font-size: 48px;
         line-height: 1;
         text-transform: uppercase;
@@ -216,23 +222,23 @@ h2 {
 
   &__wrap {
     position: relative;
-    max-width: 100px;
-    max-height: 100px;
     z-index: 5;
     margin-bottom: -6px;
+    max-width: 100px;
+    max-height: 100px;
 
     &::after {
-      position: absolute;
-      bottom: -100%;
-      left: 50%;
       content: "";
-      transform: translateX(-50%);
+      position: absolute;
+      left: 50%;
+      bottom: -100%;
+      z-index: -1;
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      z-index: -1;
-      background-color: #239AE3;
+      background-color: #239ae3;
       filter: blur(70px);
+      transform: translateX(-50%);
     }
   }
 
@@ -242,40 +248,40 @@ h2 {
   }
 
   &__price {
-    margin-left: 40px;
-    height: 95px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 40px;
     padding: 0 30px;
-    max-width: 358px;
     width: 100%;
-    position: relative;
+    height: 95px;
+    max-width: 358px;
+    border-radius: 5px;
+    background-color: #fff;
 
     &::before {
-      position: absolute;
-      inset: 5px;
       content: "";
-      border: 1px dashed #239AE3;
+      position: absolute;
+      border: 1px dashed #239ae3;
       border-radius: 2.5px;
+      inset: 5px;
     }
 
     span {
       display: block;
+      margin-bottom: 5px;
       font-size: 20px;
       line-height: 1;
-      margin-bottom: 5px;
-      color: #09031D;
+      color: #09031d;
     }
 
     p {
       font-weight: 600;
       font-size: 32px;
       line-height: 1;
-      color: #09031D;
+      color: #09031d;
     }
 
     &:last-of-type {
@@ -285,42 +291,42 @@ h2 {
 }
 
 .rv-button {
+  position: relative;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
-  width: 100%;
-  border-radius: 5px;
   padding: 0 22px;
-  background: #239AE3;
-  position: relative;
-  z-index: 5;
+  width: 100%;
+  height: 90px;
+  border-radius: 5px;
   box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.2);
+  background-color: #239ae3;
 
   &::after {
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    height: 100%;
     content: "";
-    background-color: rgba(#239AE3, 0.4);
-    box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
+    box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.2);
+    background-color: rgba(#239ae3, 0.4);
   }
 
   span {
+    font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
-    font-family: 'Manrope', sans-serif;
   }
 }
 
 .rv-button-img {
   padding: 0;
-  max-width: 95px;
   min-width: 95px;
+  max-width: 95px;
 }
