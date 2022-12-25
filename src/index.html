@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<main class="main">
+<main class="main" id="main">
   <section class="hero">
     <header class="header-footer">
       <div class="container">
@@ -23,17 +23,17 @@
           </a>
           <ul>
             <li>
-              <a href="#">
+              <a href="#rules">
                 Правила игры
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#route">
                 Задания
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#vacancy">
                 Вакансии
               </a>
             </li>
@@ -185,7 +185,7 @@
         кто твердо решил его выиграть</h2>
     </div>
   </section>
-  <section class="rules">
+  <section class="rules" id="rules">
     <div class="rules__container">
       <div class="rules__container-second">
         <div class="container">
@@ -230,7 +230,7 @@
       </div>
     </div>
   </section>
-  <section class="route">
+  <section class="route" id="route">
     <div class="container">
       <h2><span>путь к деньгам</span>задания</h2>
       <div class="route__list">
@@ -313,7 +313,7 @@
       </a>
     </div>
   </section>
-  <section class="vacancy">
+  <section class="vacancy" id="vacancy">
     <div class="container">
       <h2><span>место в команде</span>вакансии</h2>
       <div class="vacancy__wrapper">
@@ -363,22 +363,22 @@
     <footer class="header-footer footer">
       <div class="container">
         <nav class="menu">
-          <a href="#" class="logo">
+          <a href="#main" class="logo">
             <img src="./images/logo.svg" alt="Лого">
           </a>
           <ul>
             <li>
-              <a href="#">
+              <a href="#rules">
                 Правила игры
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#route">
                 Задания
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#vacancy">
                 Вакансии
               </a>
             </li>
@@ -392,6 +392,8 @@
     </footer>
   </section>
 </main>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
 <script src="js/index.js" type="module"></script>
 </body>
 </html>
