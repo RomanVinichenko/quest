@@ -6,47 +6,67 @@
   <meta name="description" content="Играй и выигрывай">
   <meta property="og:title" content="Quest Casino"/>
   <meta property="og:description" content="Играй и выигрывай"/>
-  <!--  <meta property="og:image" content="images/car.png"/>-->
+    <meta property="og:image" content="images/logo.svg"/>
   <link rel="icon" type="image/svg" href="images/fav.svg">
   <title>Quest Casino</title>
   <link rel="stylesheet" href="scss/index.scss"/>
 </head>
 
 <body>
-<header class="header-footer">
-  <div class="container">
-    <nav class="menu">
-      <a href="#" class="logo">
-        <img src="./images/logo.svg" alt="Logo">
-      </a>
-      <ul>
-        <li>
-          <a href="#">
-            Правила игры
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Задания
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Вакансии
-          </a>
-        </li>
-      </ul>
-      <a class="rv-teleg" href="#">
-        <span>Telegram</span>
-        <img src="./images/telegram.svg" alt="Телеграм">
-      </a>
-    </nav>
-  </div>
-</header>
 <main class="main">
+  <section class="hero">
+    <header class="header-footer">
+      <div class="container">
+        <nav class="menu">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="Logo">
+          </a>
+          <ul>
+            <li>
+              <a href="#">
+                Правила игры
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Задания
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Вакансии
+              </a>
+            </li>
+          </ul>
+          <a class="rv-teleg" href="https://t.me/Casino_Quest" target="_blank">
+            <span>Telegram</span>
+            <img src="./images/telegram.svg" alt="Телеграм">
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="hero__wrapper">
+        <h5>Казино - квест</h5>
+        <h1>играй и <span>выигрывай</span></h1>
+        <p>
+          Только у нас с 2 000 рублей
+          <span>вы сможете выиграть 700 000 тысяч рублей!</span>
+        </p>
+        <div class="hero__box">
+          <a class="rv-button" href="https://t.me/Casino_Quest" target="_blank">
+            <span>Начать играть</span>
+          </a>
+          <a class="button">
+            <span>правила</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="cities">
     <div class="container">
-      <h2 class="two-deg">игры проводятся <span>в следующих городах</span></h2>
+      <h2>игры проводятся <span>в следующих городах</span></h2>
       <ul class="cities__list">
         <li>
           <div class="cities__support">
@@ -140,7 +160,7 @@
         </li>
       </ul>
       <div class="cities__inner">
-        <a class="rv-button rv-button-img" href="#">
+        <a class="rv-button rv-button-img" href="https://t.me/Casino_Quest" target="_blank" >
           <img src="./images/telegram-big.svg" alt="Телеграм">
         </a>
         <div class="cities__price">
@@ -151,7 +171,7 @@
           <span>Ваш баланс в конце игры</span>
           <p>700 000 рублей</p>
         </div>
-        <a class="rv-button" href="#">
+        <a class="rv-button" href="https://t.me/Casino_Quest" target="_blank">
           <span>
             Начать играть
           </span>
@@ -159,38 +179,219 @@
       </div>
     </div>
   </section>
+  <section class="strong">
+    <div class="container">
+      <h2>Сражение выигрывает тот,<br>
+        кто твердо решил его выиграть</h2>
+    </div>
+  </section>
+  <section class="rules">
+    <div class="rules__container">
+      <div class="rules__container-second">
+        <div class="container">
+          <h2><span>ПРАВИЛА игры</span>максимально просты</h2>
+          <ul>
+            <li>
+              <div class="rules__decor">
+                <div class="rules__helper">
+                  <div class="rules__img">
+                    <img src="images/money.png?as=webp" alt="Старт">
+                  </div>
+                </div>
+              </div>
+              <h4>СТАРТ</h4>
+              <p>Для старта нужно внести
+                2&nbsp;000 рублей и прислать чек об оплате</p>
+            </li>
+            <li>
+              <div class="rules__decor">
+                <div class="rules__helper">
+                  <div class="rules__img">
+                    <img src="images/ruletka.png?as=webp" alt="пройти задания">
+                  </div>
+                </div>
+              </div>
+              <h4>пройти задания</h4>
+              <p>Чтобы выиграть, нужно пройти 9 простых заданий - их будет давать наш оператор в порядке очереди</p>
+            </li>
+            <li>
+              <div class="rules__decor">
+                <div class="rules__helper">
+                  <div class="rules__img">
+                    <img src="images/bablo.png?as=webp" alt="забрать приз">
+                  </div>
+                </div>
+              </div>
+              <h4>забрать приз</h4>
+              <p>После прохождения заданий, заберите ваш гарантированный денежный приз</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="route">
+    <div class="container">
+      <h2><span>путь к деньгам</span>задания</h2>
+      <div class="route__list">
+        <div class="route__box-first">
+          <div class="route__item item1">
+            <div class="route__wrap">
+              <h4>Первое задание</h4>
+              <p>Загадка</p>
+            </div>
+          </div>
+          <div class="route__item item2">
+            <div class="route__wrap">
+              <h4>второе задание</h4>
+              <p>По выданному адресу найти тайник с камнем</p>
+            </div>
+          </div>
+          <div class="route__item item3">
+            <div class="route__wrap">
+              <h4>третье задание</h4>
+              <p>Купить электронные весы с точностью не более 0.01 мг. Адрес магазина вам подскажут</p>
+            </div>
+          </div>
+        </div>
+        <div class="route__item item4">
+          <div class="route__wrap">
+            <h4>четвертое задание</h4>
+            <p>На электронных весах нужно взвесить найденный камень. Первые две цифры веса обозначают номер реально
+              существующего дома. Улицу вам подскажет оператор, но при условии, если вы сломаете камень. Именно этот дом
+              вам нужен для прохождения следующего задания. После того, как вы узнаете вес этого камня, вам нужно
+              включить камеру и на видео снять процесс, как вы с помощью рук или ног ломаете этот камень. Если вы его
+              сломаете, оператор вам сообщит название улицы. Если же нет, то нужный дом вам придётся искать
+              самостоятельно по всему городу. Очень важно: камень нужно сломать в течение 30 минут после того, как он
+              был найден.</p>
+          </div>
+        </div>
+        <div class="route__box-second">
+          <div class="route__item item5">
+            <div class="route__wrap">
+              <h4>пятое задание</h4>
+              <p>Возле того самого дома будет стоять будка, а на ней - 5 английских букв. Это логин от Телеграма
+                неизвестного пользователя. Вам необходимо написать ему слово "Победа". Это позволит вам перейти к
+                следующему заданию.</p>
+            </div>
+          </div>
+          <div class="route__item item6">
+            <div class="route__wrap">
+              <h4>шестое задание</h4>
+              <p>Уже знакомый вам неизвестный пользователь в Telegram скинет вам координаты (точку в лесу) и фото, на
+                котором будет метка. В этом месте спрятана записка. Ваша задача её найти.</p>
+            </div>
+          </div>
+        </div>
+        <div class="route__box-third">
+          <div class="route__item item7">
+            <div class="route__wrap">
+              <h4>седьмое задание</h4>
+              <h5>зашифровано, доступно только игрокам</h5>
+              <h6>зашифровано, доступно только игрокам</h6>
+            </div>
+          </div>
+          <div class="route__item item8">
+            <div class="route__wrap">
+              <h4>восьмое задание</h4>
+              <h5>зашифровано, доступно только игрокам</h5>
+              <h6>зашифровано, доступно только игрокам</h6>
+            </div>
+          </div>
+          <div class="route__item item9">
+            <div class="route__wrap">
+              <h4>девятое задание</h4>
+              <h5>зашифровано, доступно только игрокам</h5>
+              <h6>зашифровано, доступно только игрокам</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="rv-button" href="https://t.me/Casino_Quest" target="_blank">
+        <span>написать оператору и начать игру</span>
+        <img src="images/telegram.svg" alt="Телеграм">
+      </a>
+    </div>
+  </section>
+  <section class="vacancy">
+    <div class="container">
+      <h2><span>место в команде</span>вакансии</h2>
+      <div class="vacancy__wrapper">
+        <div class="vacancy__man">
+          <div class="vacancy__people">
+            <div class="vacancy__people-wrap">
+              <div class="vacancy__people-box">
+                <img src="images/people.png?as=webp" alt="Вакансия">
+              </div>
+            </div>
+          </div>
+          <div class="vacancy__button">
+            <div class="vacancy__button-wrap">
+              <a class="rv-button" href="https://t.me/Casino_Quest" target="_blank">
+                <span>начать работать</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="vacancy__info">
+          <div class="vacancy__info-wrap">
+            <div class="vacancy__info-inner">
+              <h3>Требуется работник на квест</h3>
+              <div class="vacancy__bard">
+                <div class="vacancy__bard-wrap">
+                  <div class="vacancy__bard-inner">
+                    <p>Заработная плата<br>
+                      в месяц</p>
+                    <h3>150 000+</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4>Ваша задача:</h4>
+            <ul class="vacancy__table">
+              <li>
+                <p>Делать тайники с камнями для игроков (второе задание)</p>
+              </li>
+              <li>
+                <p>Находить дома, рядом с которыми есть забор, гараж или будка. На них нужно будет оставить ник из Телеграма нашего сотрудника (это уже пятое задание для игроков).</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="header-footer footer">
+      <div class="container">
+        <nav class="menu">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="Лого">
+          </a>
+          <ul>
+            <li>
+              <a href="#">
+                Правила игры
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Задания
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Вакансии
+              </a>
+            </li>
+          </ul>
+          <a class="rv-teleg" href="https://t.me/Casino_Quest" target="_blank">
+            <span>Telegram</span>
+            <img src="./images/telegram.svg" alt="Телеграм">
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </section>
 </main>
-<footer class="header-footer">
-  <div class="container">
-    <nav class="menu">
-      <a href="#" class="logo">
-        <img src="./images/logo.svg" alt="Лого">
-      </a>
-      <ul>
-        <li>
-          <a href="#">
-            Правила игры
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Задания
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Вакансии
-          </a>
-        </li>
-      </ul>
-      <a class="rv-teleg" href="#">
-        <span>Telegram</span>
-        <img src="./images/telegram.svg" alt="Телеграм">
-      </a>
-    </nav>
-  </div>
-</footer>
-<!--<img src="./images/photo.jpg?as=webp" alt="Картинка">-->
 <script src="js/index.js" type="module"></script>
 </body>
 </html>
