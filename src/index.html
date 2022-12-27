@@ -6,45 +6,58 @@
   <meta name="description" content="Играй и выигрывай">
   <meta property="og:title" content="Quest Casino"/>
   <meta property="og:description" content="Играй и выигрывай"/>
-    <meta property="og:image" content="images/logo.svg"/>
+  <meta property="og:image" content="images/logo.svg"/>
   <link rel="icon" type="image/svg" href="images/fav.svg">
   <title>Quest Casino</title>
   <link rel="stylesheet" href="scss/index.scss"/>
 </head>
 
 <body>
+<header class="header-footer header">
+  <div class="container">
+    <nav class="menu">
+      <a href="#main" class="logo linkin">
+        <img src="./images/logo.svg" alt="Logo">
+      </a>
+      <div class="menu__mob">
+        <ul>
+          <li>
+            <a class="linkin" href="#rules">
+              Правила игры
+            </a>
+          </li>
+          <li>
+            <a class="linkin" href="#route">
+              Задания
+            </a>
+          </li>
+          <li>
+            <a class="linkin" href="#vacancy">
+              Вакансии
+            </a>
+          </li>
+        </ul>
+        <a class="rv-teleg" href="https://t.me/Casino_Quest" target="_blank">
+          <span>Telegram</span>
+          <img src="./images/telegram.svg" alt="Телеграм">
+        </a>
+        <h4 class="menu__mob-title">
+          Казино - квест
+        </h4>
+        <h1 class="menu__mob-head">
+          играй и <br><span>выигрывай</span>
+        </h1>
+      </div>
+      <button class="burger">
+        <img src="images/burger.svg" alt="Меню">
+        <img src="images/burger-close.svg" alt="Меню">
+      </button>
+    </nav>
+  </div>
+</header>
+
 <main class="main" id="main">
   <section class="hero">
-    <header class="header-footer">
-      <div class="container">
-        <nav class="menu">
-          <a href="#" class="logo">
-            <img src="./images/logo.svg" alt="Logo">
-          </a>
-          <ul>
-            <li>
-              <a href="#rules">
-                Правила игры
-              </a>
-            </li>
-            <li>
-              <a href="#route">
-                Задания
-              </a>
-            </li>
-            <li>
-              <a href="#vacancy">
-                Вакансии
-              </a>
-            </li>
-          </ul>
-          <a class="rv-teleg" href="https://t.me/Casino_Quest" target="_blank">
-            <span>Telegram</span>
-            <img src="./images/telegram.svg" alt="Телеграм">
-          </a>
-        </nav>
-      </div>
-    </header>
     <div class="container">
       <div class="hero__wrapper">
         <h5>Казино - квест</h5>
@@ -57,7 +70,7 @@
           <a class="rv-button" href="https://t.me/Casino_Quest" target="_blank">
             <span>Начать играть</span>
           </a>
-          <a class="button">
+          <a class="button" href="#rules">
             <span>правила</span>
           </a>
         </div>
@@ -159,8 +172,9 @@
           </div>
         </li>
       </ul>
+      <img class="cities__mob" src="images/cities-mob.png?as=webp" alt="Города">
       <div class="cities__inner">
-        <a class="rv-button rv-button-img" href="https://t.me/Casino_Quest" target="_blank" >
+        <a class="rv-button rv-button-img" href="https://t.me/Casino_Quest" target="_blank">
           <img src="./images/telegram-big.svg" alt="Телеграм">
         </a>
         <div class="cities__price">
@@ -181,7 +195,7 @@
   </section>
   <section class="strong">
     <div class="container">
-      <h2>Сражение выигрывает тот,<br>
+      <h2>Сражение выигрывает тот,
         кто твердо решил его выиграть</h2>
     </div>
   </section>
@@ -308,7 +322,7 @@
         </div>
       </div>
       <a class="rv-button" href="https://t.me/Casino_Quest" target="_blank">
-        <span>написать оператору и начать игру</span>
+        <span>написать оператору</span>
         <img src="images/telegram.svg" alt="Телеграм">
       </a>
     </div>
@@ -353,7 +367,8 @@
                 <p>Делать тайники с камнями для игроков (второе задание)</p>
               </li>
               <li>
-                <p>Находить дома, рядом с которыми есть забор, гараж или будка. На них нужно будет оставить ник из Телеграма нашего сотрудника (это уже пятое задание для игроков).</p>
+                <p>Находить дома, рядом с которыми есть забор, гараж или будка. На них нужно будет оставить ник из
+                  Телеграма нашего сотрудника (это уже пятое задание для игроков).</p>
               </li>
             </ul>
           </div>
@@ -363,30 +378,42 @@
     <footer class="header-footer footer">
       <div class="container">
         <nav class="menu">
-          <a href="#main" class="logo">
-            <img src="./images/logo.svg" alt="Лого">
+          <a href="#main" class="logo linkin">
+            <img src="./images/logo.svg" alt="Logo">
           </a>
-          <ul>
-            <li>
-              <a href="#rules">
-                Правила игры
-              </a>
-            </li>
-            <li>
-              <a href="#route">
-                Задания
-              </a>
-            </li>
-            <li>
-              <a href="#vacancy">
-                Вакансии
-              </a>
-            </li>
-          </ul>
-          <a class="rv-teleg" href="https://t.me/Casino_Quest" target="_blank">
-            <span>Telegram</span>
-            <img src="./images/telegram.svg" alt="Телеграм">
-          </a>
+          <div class="menu__mob">
+            <ul>
+              <li>
+                <a class="linkin" href="#rules">
+                  Правила игры
+                </a>
+              </li>
+              <li>
+                <a class="linkin" href="#route">
+                  Задания
+                </a>
+              </li>
+              <li>
+                <a class="linkin" href="#vacancy">
+                  Вакансии
+                </a>
+              </li>
+            </ul>
+            <a class="rv-teleg" href="https://t.me/Casino_Quest" target="_blank">
+              <span>Telegram</span>
+              <img src="./images/telegram.svg" alt="Телеграм">
+            </a>
+            <h4 class="menu__mob-title">
+              Казино - квест
+            </h4>
+            <h1 class="menu__mob-head">
+              играй и <br><span>выигрывай</span>
+            </h1>
+          </div>
+          <button class="burger burger__footer">
+            <img src="images/burger.svg" alt="Меню">
+            <img src="images/burger-close.svg" alt="Меню">
+          </button>
         </nav>
       </div>
     </footer>
