@@ -24,7 +24,6 @@ function ready() {
 
 document.addEventListener("DOMContentLoaded", ready);
 
-
 let header = document.querySelector(".header");
 window.addEventListener("scroll", function () {
   let scrollPos = window.scrollY;
@@ -37,17 +36,20 @@ window.addEventListener("scroll", function () {
 });
 
 const burger = document.querySelector(".burger")
+const footer = document.querySelector(".footer")
 const burgerFooter = document.querySelector(".burger__footer")
 const menuMob = document.querySelector(".menu__mob")
 burger.addEventListener("click", function () {
   menuMob.classList.toggle("menu__mob-active")
   burger.classList.toggle("burger--active")
   burgerFooter.classList.toggle("burger--active")
+  footer.classList.toggle("footer--inactive")
 })
 burgerFooter.addEventListener("click", function () {
   menuMob.classList.toggle("menu__mob-active")
   burger.classList.toggle("burger--active")
   burgerFooter.classList.toggle("burger--active")
+  footer.classList.toggle("footer--inactive")
 })
 
 const linkin = document.querySelectorAll(".linkin")
@@ -56,5 +58,6 @@ linkin.forEach(function (removingTel) {
     menuMob.classList.remove("menu__mob-active")
     burger.classList.remove("burger--active")
     burgerFooter.classList.remove("burger--active")
+    footer.classList.remove("footer--inactive")
   })
 })
