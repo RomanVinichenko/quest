@@ -21,6 +21,7 @@ function ready() {
     header.classList.remove("header--active");
   }
 }
+
 document.addEventListener("DOMContentLoaded", ready);
 
 
@@ -39,9 +40,9 @@ const burger = document.querySelector(".burger")
 const burgerFooter = document.querySelector(".burger__footer")
 const menuMob = document.querySelector(".menu__mob")
 burger.addEventListener("click", function () {
-    menuMob.classList.toggle("menu__mob-active")
-    burger.classList.toggle("burger--active")
-    burgerFooter.classList.toggle("burger--active")
+  menuMob.classList.toggle("menu__mob-active")
+  burger.classList.toggle("burger--active")
+  burgerFooter.classList.toggle("burger--active")
 })
 burgerFooter.addEventListener("click", function () {
   menuMob.classList.toggle("menu__mob-active")
