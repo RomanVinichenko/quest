@@ -6,11 +6,12 @@ body {
   color: #fff;
 
   //font-family: 'Raleway', sans-serif;
-  background-image: url("../images/bg.svg");
+  background-image: url("../images/bg.png?as=webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #09031d;
+
+  //background-color: #09031d;
   cursor: default;
 }
 
@@ -577,7 +578,7 @@ h2 {
 .cities {
   position: relative;
   margin-bottom: 58px;
-  background-image: url("../images/cities-bg.svg");
+  background-image: url("../images/cities-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
